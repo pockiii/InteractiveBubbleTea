@@ -1,0 +1,6 @@
+@media only screen and (max-width: 1045px) {
+  #top {
+    width: 65% !important;
+    margin: 0 auto !important;
+  }
+}
