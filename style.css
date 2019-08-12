@@ -1,0 +1,104 @@
+body {
+  background-color: #363636;
+}
+.container {
+  display: inline-block;
+  margin: 1rem;
+}
+#straw {
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+  background-color: #ff6b6b;
+  height: 4rem;
+  width: 2.5rem;
+  margin-left: 12rem;
+}
+#straw::before {
+  content: '';
+  border-radius: .3rem;
+  background-color: #ffa1a1;
+  height: 3.6rem;
+  width: .4rem;
+  margin:  .2rem 1.8rem;
+  position: absolute;
+}
+#lid {
+  background-color: #d9d9d9;
+  height: 1.5rem;
+  width: 16.8rem;
+  border-radius: .6rem;
+}
+#lid::before {
+  content: '';
+  background-color: #ffffff;
+  height: 1.5rem;
+  width: 12rem;
+  border-radius: .6rem;
+  position: absolute;
+}
+.s {
+  background: rgb(184,225,152);
+  background: linear-gradient(180deg, rgba(184,225,152,1) 54%, rgba(134,169,83,1) 100%);
+
+  background: rgb(209,158,79);
+  background: linear-gradient(0deg, rgba(209,158,79,1) 0%, rgba(246,235,222,1) 100%);
+}
+#cup {
+  padding: 3rem .5rem .5rem .5rem;
+  margin: 0 .5rem;
+  background: rgb(184,225,152);
+  background: linear-gradient(180deg, rgba(184,225,152,1) 24%, rgba(134,169,83,1) 80%);
+  width: 14rem;
+  height: 12rem;
+  border-bottom-left-radius: 6rem;
+  border-bottom-right-radius: 6rem;
+  border: .3rem solid #ffffff;
+  border-top: none;
+  position: absolute;
+  background-clip: content-box; /* support: IE9+ */
+}
+#cup2 {
+  padding: 3rem .5rem .5rem .5rem;
+  margin: 0 .5rem;
+  background: rgb(209,158,79);
+  background: linear-gradient(0deg, rgba(209,158,79,1) 0%, rgba(246,235,222,1) 60%);
+  width: 14rem;
+  height: 12rem;
+  border-bottom-left-radius: 6rem;
+  border-bottom-right-radius: 6rem;
+  border: .3rem solid #ffffff;
+  border-top: none;
+  position: absolute;
+  background-clip: content-box; /* support: IE9+ */
+}
+#cup2 .brim {
+  background-color: rgba(246,235,222,1);
+}
+.brim {
+  background-color: rgb(184,225,152);
+  width: 14rem;
+  height: 2rem;
+  margin-top: -1rem;
+  border-radius: .6rem;
+  position: relative;
+}
+#cup,#lid,#straw {
+  box-shadow: 22px 0 2px #;
+}
+#cup2 div > span > div {
+  display: inline-block;
+  margin: .2rem;
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  background-color: #1f1f1f;
+}
+#bot {
+  margin-top: 5rem;
+}
+#spacer {
+  margin: .5em;
+}
+#spacer2 {
+  margin: 1.6em;
+}
