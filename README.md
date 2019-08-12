@@ -5,10 +5,6 @@ Current design:
 
 ![alt text](https://i.imgur.com/0PuNqDx.png)
 
-TODO: 
+In progress: 
 
-Customization
-
-UI design
-
-Etc
+![alt text](https://i.imgur.com/2BroaSq.png)
