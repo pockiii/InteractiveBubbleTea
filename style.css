@@ -1,10 +1,11 @@
 body {
   background-color: #363636;
+  padding: 3% 0;
 }
 .container {
   display: inline-block;
-  margin: 3%;
-  margin-top: 18.7rem;
+  margin: 1rem;
+  margin-top: 16.7rem; /*change for size*/
 }
 #straw {
   border-top-left-radius: .3rem;
@@ -37,20 +38,20 @@ body {
   border-radius: .6rem;
   position: absolute;
 }
-.s {
-  background: rgb(184,225,152);
-  background: linear-gradient(180deg, rgba(184,225,152,1) 54%, rgba(134,169,83,1) 100%);
-
-  background: rgb(209,158,79);
-  background: linear-gradient(0deg, rgba(209,158,79,1) 0%, rgba(246,235,222,1) 100%);
+:root {
+  --tapioca: #1f1f1f;
+  --matcha: rgb(184,225,152);
+  --matcha-gradient: linear-gradient(180deg, rgba(184,225,152,1) 54%, rgba(134,169,83,1) 100%);
+  --brown-sugar: rgb(209,158,79);
+  --brown-sugar-gradient: linear-gradient(0deg, rgba(209,158,79,1) 0%, rgba(246,235,222,1) 100%);
 }
 #cup {
   padding: 3rem .5rem .5rem .5rem;
   margin: 0 .5rem;
-  background: rgb(184,225,152);
-  background: linear-gradient(180deg, rgba(184,225,152,1) 24%, rgba(134,169,83,1) 80%);
+  background: var(--matcha);
+  background: var(--matcha-gradient);
   width: 14rem;
-  height: 12rem;
+  height: 14rem; /*change for size*/
   border-bottom-left-radius: 6rem;
   border-bottom-right-radius: 6rem;
   border: .3rem solid #ffffff;
@@ -58,46 +59,24 @@ body {
   position: absolute;
   background-clip: content-box; /* support: IE9+ */
 }
-
-#cup2 {
-  padding: 3rem .5rem .5rem .5rem;
-  margin: 0 .5rem;
-  background: rgb(209,158,79);
-  background: linear-gradient(0deg, rgba(209,158,79,1) 0%, rgba(246,235,222,1) 60%);
-  width: 14rem;
-  height: 12rem;
-  border-bottom-left-radius: 6rem;
-  border-bottom-right-radius: 6rem;
-  border: .3rem solid #ffffff;
-  border-top: none;
-  position: absolute;
-  background-clip: content-box; /* support: IE9+ */
-}
-#cup2 .brim {
-  background-color: rgba(246,235,222,1);
-}
-
 .brim {
-  background-color: rgb(184,225,152);
+  background-color: var(--matcha);
   width: 14rem;
   height: 2rem;
   margin-top: -1rem;
   border-radius: .6rem;
   position: relative;
 }
-#cup,#lid,#straw {
-  box-shadow: 22px 0 2px #;
-}
-#cup2 div > span > div {
+#cup div > span > div {
   display: inline-block;
   margin: .2rem;
   height: 2.2rem;
   width: 2.2rem;
   border-radius: 50%;
-  background-color: #1f1f1f;
+  background-color: var(--tapioca);
 }
 #bot {
-  margin-top: 5rem;
+  margin-top: 7rem; /*change for size*/
 }
 #spacer {
   margin: .5em;
@@ -107,7 +86,7 @@ body {
 }
 #top {
   height: 40rem;
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
 }
 #floor {
@@ -125,4 +104,21 @@ body {
   margin-left: -10%;
   height: .5rem;
   border-radius: 3rem;
+}
+.menu {
+  display: inline-block;
+  margin: 2rem 4rem;
+  height: 30rem;
+  width: 35rem;
+  border-radius: .5rem;
+  border: .5rem solid #5e5e5e;
+  position: absolute;
+}
+p {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 1rem;
+  border-radius: .3rem;
+  border: .3rem solid #5e5e5e;
+  cursor: pointer;
 }

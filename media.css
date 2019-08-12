@@ -1,6 +1,21 @@
-@media only screen and (max-width: 1045px) {
+@media only screen and (max-width: 1045px) and (min-height: 1045px) {
   #top {
-    width: 65% !important;
+    width: 32% !important;
     margin: 0 auto !important;
+  }
+  .menu {
+    margin: 22rem -13% !important;
+    display: block !important;
+  }
+}
+@media only screen and (max-height: 1045px) {
+  body {
+    padding-right: 2rem !important;
+  }
+  #top {
+    height: 35rem !important;
+  }
+  .container {
+    margin-top: 12rem !important; /*change for size*/
   }
 }
