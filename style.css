@@ -1,8 +1,8 @@
 body {
-  background-color: #363636;
+  background: rgb(54,54,54);
   padding: 3% 0;
 }
-.container {
+#container {
   display: inline-block;
   margin: 1rem;
   margin-top: 16.7rem; /*change for size*/
@@ -39,7 +39,7 @@ body {
   position: absolute;
 }
 :root {
-  --tapioca: #1f1f1f;
+  --tapioca: ;
   --matcha: rgb(184,225,152);
   --matcha-gradient: linear-gradient(180deg, rgba(184,225,152,1) 54%, rgba(134,169,83,1) 100%);
   --brown-sugar: rgb(209,158,79);
@@ -48,8 +48,8 @@ body {
 #cup {
   padding: 3rem .5rem .5rem .5rem;
   margin: 0 .5rem;
-  background: var(--matcha);
-  background: var(--matcha-gradient);
+  background: var(--tea);
+  background: var(--tea-gradient);
   width: 14rem;
   height: 14rem; /*change for size*/
   border-bottom-left-radius: 6rem;
@@ -60,7 +60,7 @@ body {
   background-clip: content-box; /* support: IE9+ */
 }
 .brim {
-  background-color: var(--matcha);
+  background-color: var(--tea);
   width: 14rem;
   height: 2rem;
   margin-top: -1rem;
